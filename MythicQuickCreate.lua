@@ -1,23 +1,18 @@
 local _, MythicQuickCreate = ...
 
 local mplusObj = {}
-
 local mapMap = {}
-mapMap[1284] = 503
-mapMap[1287] = 501
-mapMap[1285] = 505
-mapMap[713] = 376
-mapMap[1290] = 507
-mapMap[703] = 375
-mapMap[1288] = 502
 
-local englishFaction = UnitFactionGroup("player")
-if englishFaction == "Alliance" then
-	mapMap[534] = 353
-else
-	mapMap[659] = 353
-end
+-- MapID = ChallengeMode ID
 
+mapMap[1283] = 500
+mapMap[1282] = 504
+mapMap[1281] = 499
+mapMap[1286] = 506
+mapMap[1550] = 525
+mapMap[717] = 382
+mapMap[510] = 247
+mapMap[683] = 370
 local initialized = false
 
 LFGListFrame.CategorySelection.StartGroupButton:HookScript("OnClick", function(self)
@@ -168,6 +163,7 @@ end
 
 
 --@do-not-package@
+--- use line 169 and select each dungeon to get the ids = DevTool:AddData(self.selectedActivity , "selectedActivity")
 -- local dObj = {}
 -- local mapChallengeModeIDs = C_ChallengeMode.GetMapTable()
 -- table.foreach(mapChallengeModeIDs, function(index, mapID)
