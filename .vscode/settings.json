@@ -166,7 +166,8 @@
         "message",
         "UIErrorsFrame",
         "ERR_SPELL_ALREADY_KNOWN_S",
-        "MythicQuickCreateContent"
+        "MythicQuickCreateContent",
+        "RED_FONT_COLOR"
     ],
     "Lua.diagnostics.disable": [
         "undefined-field",
@@ -185,6 +186,6 @@
         "utf8": "disable"
     },
     "Lua.workspace.library": [
-        "~\\.vscode\\extensions\\ketho.wow-api-0.17.6\\Annotations"
+        "~\\.vscode\\extensions\\ketho.wow-api-0.20.8\\Annotations\\Core"
     ]
 }

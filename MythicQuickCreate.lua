@@ -5,14 +5,16 @@ local mapMap = {}
 
 -- MapID = ChallengeMode ID
 
-mapMap[1283] = 500
-mapMap[1282] = 504
 mapMap[1281] = 499
-mapMap[1286] = 506
+mapMap[1694] = 542
+mapMap[699] = 378
 mapMap[1550] = 525
-mapMap[717] = 382
-mapMap[510] = 247
-mapMap[683] = 370
+mapMap[1284] = 503
+mapMap[1017] = 392
+mapMap[1016] = 391
+mapMap[1285] = 505
+
+
 local initialized = false
 
 LFGListFrame.CategorySelection.StartGroupButton:HookScript("OnClick", function(self)
@@ -47,6 +49,7 @@ function MythicQuickCreate:Init()
 			texture = texture
 		})
 	end
+
 
 	table.sort(mplusObj, function(a, b) return a.name < b.name end)
 
@@ -163,6 +166,7 @@ end
 
 
 --@do-not-package@
+-- ListGroupButton
 --- use line 169 and select each dungeon to get the ids = DevTool:AddData(self.selectedActivity , "selectedActivity")
 -- local dObj = {}
 -- local mapChallengeModeIDs = C_ChallengeMode.GetMapTable()
@@ -176,4 +180,8 @@ end
 -- end)
 
 -- DevTool:AddData(dObj, "dObj")
+
+-- https://wago.tools/db2/MapChallengeMode 
+-- insert ChallengeModeID here and copy  MapID to 
+-- https://wago.tools/db2/GroupFinderActivity
 --@end-do-not-package@
