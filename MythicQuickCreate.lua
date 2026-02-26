@@ -60,7 +60,6 @@ function MythicQuickCreate:Init()
 
 	MythicQuickCreate.DescriptionLabelPoint = { LFGListFrame.EntryCreation.DescriptionLabel:GetPoint() }
 	MythicQuickCreate.DescriptionHeight = LFGListFrame.EntryCreation.Description:GetHeight()
-	MythicQuickCreate.PlayStyleLabelPoint = { LFGListFrame.EntryCreation.PlayStyleLabel:GetPoint() }
 	MythicQuickCreate:createDungeonsButtons()
 end
 
@@ -91,7 +90,6 @@ end
 function MythicQuickCreate:Hide()
 	LFGListFrame.EntryCreation.DescriptionLabel:SetPoint("TOPLEFT",LFGListFrame.EntryCreation.NameLabel, "TOPLEFT",  MythicQuickCreate.DescriptionLabelPoint[4], MythicQuickCreate.DescriptionLabelPoint[5])
 	LFGListFrame.EntryCreation.Description:SetHeight(MythicQuickCreate.DescriptionHeight)
-	LFGListFrame.EntryCreation.PlayStyleLabel:SetPoint("TOPLEFT",LFGListFrame.EntryCreation.DescriptionLabel, "TOPLEFT", MythicQuickCreate.PlayStyleLabelPoint[4], MythicQuickCreate.PlayStyleLabelPoint[5])
 	MythicQuickCreateContent:Hide() 
 end
 
