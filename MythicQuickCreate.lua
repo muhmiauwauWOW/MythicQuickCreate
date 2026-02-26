@@ -82,7 +82,6 @@ function MythicQuickCreate:Show(panel)
 
 	LFGListFrame.EntryCreation.DescriptionLabel:SetPoint("TOPLEFT",LFGListFrame.EntryCreation.NameLabel, "TOPLEFT",  0,-90)
 	LFGListFrame.EntryCreation.Description:SetHeight(13)
-	LFGListFrame.EntryCreation.PlayStyleLabel:SetPoint("TOPLEFT",LFGListFrame.EntryCreation.DescriptionLabel, "TOPLEFT", 0,-55)
 
 	MythicQuickCreateContent:Show() 
 end
