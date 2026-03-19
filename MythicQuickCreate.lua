@@ -5,14 +5,14 @@ local mapMap = {}
 
 -- MapID = ChallengeMode ID
 
-mapMap[1281] = 499
-mapMap[1694] = 542
-mapMap[699] = 378
-mapMap[1550] = 525
-mapMap[1284] = 503
-mapMap[1017] = 392
-mapMap[1016] = 391
-mapMap[1285] = 505
+mapMap[486] = 239 -- Seat of the Triumvirate (Mythic Keystone)
+mapMap[182] = 161 -- Skyreach (Mythic Keystone)
+mapMap[1764] = 560 -- Maisara Caverns (Mythic Keystone)
+mapMap[1770] = 556 -- Pit of Saron (Mythic Keystone)
+mapMap[1160] = 402 -- Algeth'ar Academy (Mythic Keystone)
+mapMap[1760] = 558 -- Magisters' Terrace (Mythic Keystone)
+mapMap[1768] = 559 -- Nexus-Point Xenas (Mythic Keystone)
+mapMap[1542] = 557 -- Windrunner Spire (Mythic Keystone)
 
 
 local initialized = false
@@ -164,10 +164,12 @@ end
 
 --@do-not-package@
 -- ListGroupButton
---- use line 169 and select each dungeon to get the ids = DevTool:AddData(self.selectedActivity , "selectedActivity")
+-- - use line 169 and select each dungeon to get the ids = DevTool:AddData(self.selectedActivity , "selectedActivity")
 -- local dObj = {}
 -- local mapChallengeModeIDs = C_ChallengeMode.GetMapTable()
+-- DevTool:AddData(mapChallengeModeIDs, "mapChallengeModeIDs")
 -- table.foreach(mapChallengeModeIDs, function(index, mapID)
+-- DevTool:AddData(table.pack(C_ChallengeMode.GetMapUIInfo(mapID)), "GetMapUIInfo")
 -- 	local mapInfo = table.pack(C_ChallengeMode.GetMapUIInfo(mapID))
 -- 	tinsert(dObj, {
 -- 		id =  mapInfo[2],
@@ -175,7 +177,7 @@ end
 -- 		mapInfo = mapInfo
 -- 	})
 -- end)
-
+-- 239
 -- DevTool:AddData(dObj, "dObj")
 
 -- https://wago.tools/db2/MapChallengeMode 
