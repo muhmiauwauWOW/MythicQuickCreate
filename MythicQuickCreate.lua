@@ -4,15 +4,14 @@ local mplusObj = {}
 local mapMap = {}
 
 -- MapID = ChallengeMode ID
-
-mapMap[486] = 239 -- Seat of the Triumvirate (Mythic Keystone)
-mapMap[182] = 161 -- Skyreach (Mythic Keystone)
-mapMap[1764] = 560 -- Maisara Caverns (Mythic Keystone)
-mapMap[1770] = 556 -- Pit of Saron (Mythic Keystone)
-mapMap[1160] = 402 -- Algeth'ar Academy (Mythic Keystone)
-mapMap[1760] = 558 -- Magisters' Terrace (Mythic Keystone)
-mapMap[1768] = 559 -- Nexus-Point Xenas (Mythic Keystone)
-mapMap[1542] = 557 -- Windrunner Spire (Mythic Keystone)
+mapMap[1952] = 586 -- Den of Nalorakk (Midnight)
+mapMap[1950] = 587 -- Murder Row (Midnight)
+mapMap[1949] = 584 -- The Blinding Vale (Midnight)
+mapMap[1933] = 588 -- Altar of Fangs (Midnight)
+mapMap[1951] = 585 -- Voidscar Arena (Midnight)
+mapMap[661]  = 249 -- King’s Rest (Battle for Azeroth) 
+mapMap[504]  = 250 -- Temple of Sethraliss (Battle for Azeroth)
+mapMap[1176] = 399 -- Ruby Life Pools (Dragonflight)
 
 
 local initialized = false
@@ -169,7 +168,7 @@ end
 -- local mapChallengeModeIDs = C_ChallengeMode.GetMapTable()
 -- DevTool:AddData(mapChallengeModeIDs, "mapChallengeModeIDs")
 -- table.foreach(mapChallengeModeIDs, function(index, mapID)
--- DevTool:AddData(table.pack(C_ChallengeMode.GetMapUIInfo(mapID)), "GetMapUIInfo")
+-- 	DevTool:AddData(table.pack(C_ChallengeMode.GetMapUIInfo(mapID)), "GetMapUIInfo")
 -- 	local mapInfo = table.pack(C_ChallengeMode.GetMapUIInfo(mapID))
 -- 	tinsert(dObj, {
 -- 		id =  mapInfo[2],
